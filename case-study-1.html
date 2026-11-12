@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>National Health Insurance, Wei Li</title>
+  <meta name="description" content="A UX case study by Wei Li: redesigning Taiwan's National Health Insurance app into a clear, AI-supported health companion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js"></script>
+</head>
+<body>
+  <site-nav current="work"></site-nav>
+
+  <main id="main">
+    <!-- Content from Wei's 2025 master's application portfolio (Case Study 1). Images: assets/work/nhi/ -->
+    <header class="cs-head wrap">
+      <a class="cs-head__back" href="work.html">Back to all work</a>
+      <h1>National Health Insurance</h1>
+      <p class="cs-head__summary">Redesigning Taiwan's National Health Insurance app from an overwhelming government tool into a clear, AI-supported health companion.</p>
+      <dl class="cs-facts">
+        <div><dt>Project Type</dt><dd>Self-Initiated</dd></div>
+        <div><dt>Timeline</dt><dd>8-week design sprint</dd></div>
+        <div><dt>Methods</dt><dd>Survey, personas, wireframing, low-fi &amp; hi-fi prototyping</dd></div>
+        <div><dt>Tools</dt><dd>Figma, ChatGPT, Gemini</dd></div>
+      </dl>
+      <div class="cs-hero">
+        <img src="assets/work/nhi/01-hero-mockups.jpg" alt="Four redesigned NHI app screens on phones against a blue background: the dashboard, health data graphs, the upcoming appointment with wait-time prediction, and vaccine records" width="1946" height="1372">
+      </div>
+    </header>
+
+    <div class="cs-mobilebar" aria-hidden="true">
+      <div class="cs-mobilebar__row wrap"><span class="cs-mobilebar__name">Overview</span><span class="cs-mobilebar__pct">0%</span></div>
+      <div class="cs-mobilebar__track"><div class="cs-mobilebar__fill"></div></div>
+    </div>
+
+    <div class="cs-layout wrap">
+      <nav class="cs-toc" aria-label="Case study sections">
+        <div class="cs-toc__inner">
+          <ol>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#personas">Personas</a></li>
+            <li><a href="#in-app">In-App Problems</a></li>
+            <li><a href="#system">System Problems</a></li>
+            <li><a href="#design">Final Design</a></li>
+          </ol>
+        </div>
+      </nav>
+
+      <article class="cs-content">
+        <section class="cs-section" id="overview">
+          <h2>Overview</h2>
+          <p>The National Health Insurance (NHI) app is a government-issued public health tool in Taiwan, yet many users, including myself, struggle with its overwhelming interface, unclear navigation and scattered information architecture.</p>
+          <p>As a frequent user of the app during the pandemic, I found it hard to locate basic functions such as completed COVID vaccination doses, medical reports and insurance billing. That frustration made me curious about the root causes of the poor experience.</p>
+        </section>
+
+        <section class="cs-section" id="research">
+          <h2>Research</h2>
+          <h3>User Survey</h3>
+          <p>To validate the issue, I surveyed people who actively use the NHI app. Their pain points were consistent: <strong>the login process is complicated</strong>, <strong>functions are hard to find</strong>, the app offers <strong>too many unclear options</strong>, and <strong>function titles are ambiguous</strong>. The usability problems are not isolated, they are systemic.</p>
+          <figure>
+            <img src="assets/work/nhi/02-survey-results.jpg" alt="Survey results: pie charts of respondents' app usage and bar charts ranking the app's usability problems" loading="lazy" decoding="async" width="1430" height="1390">
+            <figcaption>Survey responses from active NHI app users.</figcaption>
+          </figure>
+          <p>The result is a unified, intuitive and AI-supported NHI app that simplifies navigation, organizes complex health data, makes services easy to search and streamlines insurance billing.</p>
+        </section>
+
+        <section class="cs-section" id="personas">
+          <h2>Personas</h2>
+          <p>The survey findings shaped three personas who represent the different needs of people navigating both the app and the wider healthcare system.</p>
+          <div class="cs-personas">
+            <article class="persona">
+              <img class="persona__avatar" src="assets/work/nhi/03-persona-emily.jpg" alt="" loading="lazy" decoding="async" width="720" height="720">
+              <p class="persona__tag">Persona 1</p>
+              <h3 class="persona__name">Emily Chen</h3>
+              <p class="persona__role">Routine Health Visitor · 29 · Taipei</p>
+              <blockquote class="persona__quote">“I just want a quick and easy way to make an appointment, both online and at the counter.”</blockquote>
+              <h4>Goals</h4>
+              <ul>
+                <li>Easily book and manage clinic appointments</li>
+                <li>Get reminders for annual check-ups</li>
+                <li>Store medical history and vaccination records</li>
+              </ul>
+              <h4>Frustrations</h4>
+              <ul>
+                <li>Booking systems that need phone calls or manual registration</li>
+                <li>Filling out the same paperwork at every clinic</li>
+              </ul>
+            </article>
+            <article class="persona">
+              <img class="persona__avatar" src="assets/work/nhi/03-persona-james.jpg" alt="" loading="lazy" decoding="async" width="720" height="720">
+              <p class="persona__tag">Persona 2</p>
+              <h3 class="persona__name">Mr. James Wu</h3>
+              <p class="persona__role">Project Manager with Chronic Condition · 61 · Taichung</p>
+              <blockquote class="persona__quote">“Managing my chronic condition while working long hours is already stressful. I want to access my records &amp; lab results efficiently when needed.”</blockquote>
+              <h4>Goals</h4>
+              <ul>
+                <li>Track medical records and lab results in one place</li>
+                <li>Set reminders for medication and hospital visits</li>
+                <li>Easily communicate with healthcare providers</li>
+              </ul>
+              <h4>Frustrations</h4>
+              <ul>
+                <li>Carrying multiple papers and cards to every appointment</li>
+                <li>Hard-to-understand medical records</li>
+              </ul>
+            </article>
+            <article class="persona">
+              <img class="persona__avatar" src="assets/work/nhi/03-persona-sofia.jpg" alt="" loading="lazy" decoding="async" width="724" height="724">
+              <p class="persona__tag">Persona 3</p>
+              <h3 class="persona__name">Sofia Li</h3>
+              <p class="persona__role">Newcomer Seeking Primary Care · 35 · Kaohsiung</p>
+              <blockquote class="persona__quote">“I need to feel confident about my healthcare choices in a new environment.”</blockquote>
+              <h4>Goals</h4>
+              <ul>
+                <li>Discover trusted clinics nearby</li>
+                <li>Register for national health services quickly</li>
+                <li>Manage all health interactions digitally</li>
+              </ul>
+              <h4>Frustrations</h4>
+              <ul>
+                <li>No central information for new residents</li>
+                <li>Delays in registration and first-time appointments</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="cs-section" id="in-app">
+          <h2>In-App Problems</h2>
+          <p>Research surfaced two layers of problems: usability issues inside the app, and challenges in the healthcare system around it. These are the first layer.</p>
+
+          <p class="cs-eyebrow">Problem 1</p>
+          <h3>Complex Log-in Process</h3>
+          <p>The current app has no single sign-in flow. It shows multiple login pop-ups, repeated authentication prompts and login buttons scattered across pages, so people re-enter details whenever they open a different feature. It slows them down and makes the app feel disorganized and hard to trust.</p>
+          <figure>
+            <img src="assets/work/nhi/04-current-login.png" alt="Screenshots of the current NHI app's two separate login screens, annotated that switching between account-and-password and face ID should be one screen, above a bar chart ranking survey pain points with the complex login process near the top" loading="lazy" decoding="async" width="1600" height="1581">
+            <figcaption>The current app's login screens, and survey pain points ranked.</figcaption>
+          </figure>
+
+          <p class="cs-eyebrow cs-eyebrow--solution">Solution</p>
+          <h3>Friendly Onboarding &amp; Sign-Up</h3>
+          <p>A personalized onboarding sequence collects the user's basic medical information, chronic conditions and most-visited services, so the app can tailor recommendations, prioritize relevant features and surface nearby clinics.</p>
+          <p>People then sign up and log in once, through one simplified screen with biometric support, with no repeated prompts later in the journey.</p>
+          <figure>
+            <img src="assets/work/nhi/05-onboarding-intro.png" alt="Three onboarding screens introducing the app: National Health Insurance, Insurance and Billing Management, and Healthcare Facilities Search and Booking" loading="lazy" decoding="async" width="1600" height="1764">
+          </figure>
+          <figure>
+            <img src="assets/work/nhi/06-onboarding-signup.png" alt="Sign-up screens: Get Started, scanning the National Health Insurance card, and Set Up Your Profile" loading="lazy" decoding="async" width="1600" height="998">
+          </figure>
+          <figure>
+            <img src="assets/work/nhi/07-onboarding-profile.png" alt="Five profile setup screens asking about medical conditions and most-visited services, ending with You're All Set and the personalized home screen" loading="lazy" decoding="async" width="1600" height="510">
+            <figcaption>Onboarding collects health details once, then personalizes the home screen.</figcaption>
+          </figure>
+
+          <p class="cs-eyebrow">Problem 2</p>
+          <h3>Search Function Is Scattered in Different Levels of Navigation</h3>
+          <p>People struggle to find clinics or hospitals that offer the exact service they need, such as a vaccination. Without clear, reliable facility information, they waste time calling clinics, browsing outdated websites or visiting several locations. In the current app, search is split between two different tabs.</p>
+          <figure>
+            <img src="assets/work/nhi/08-current-search.png" alt="Screenshots of the current app's two separate search flows: list and map search under the Search tab, and dentistry and homecare search under the Home tab" loading="lazy" decoding="async" width="1600" height="1645">
+            <figcaption>Facility search is split across the Search and Home tabs today.</figcaption>
+          </figure>
+
+          <p class="cs-eyebrow cs-eyebrow--solution">Solution</p>
+          <h3>Keyword Search for Facilities</h3>
+          <p>One smart search lets people filter clinics and hospitals by vaccination, available services, distance, opening hours and real-time wait status. AI suggests service keywords based on the health details entered at sign-up and on current medical trends.</p>
+          <figure>
+            <img src="assets/work/nhi/09-facility-search.png" alt="Redesigned search screen annotated with AI-suggested service keywords, real wait time for walk-ins, a list and map view switch, and color-highlighted service status" loading="lazy" decoding="async" width="1600" height="1211">
+          </figure>
+        </section>
+
+        <section class="cs-section" id="system">
+          <h2>System Problems</h2>
+          <p>The second layer: challenges across Taiwan's healthcare system that the app can help with.</p>
+
+          <p class="cs-eyebrow">Problem 3</p>
+          <h3>Scattered Medical Reports &amp; Health Data</h3>
+          <p>Patients with chronic conditions such as diabetes receive reports from several clinics and hospitals. With no single place to follow metrics like blood glucose, kidney function or weight, managing their health becomes overwhelming.</p>
+
+          <p class="cs-eyebrow cs-eyebrow--solution">Solution</p>
+          <h3>AI-Powered Health Data Overview</h3>
+          <p>The app gathers reports from every clinic and hospital, extracts the key metrics and organizes them into one dashboard. Clear charts and trend analysis help chronic-disease patients understand their long-term progress and spot meaningful patterns.</p>
+          <figure>
+            <img src="assets/work/nhi/10-health-data.png" alt="Three health data screens: metric cards with a health trend chart, vaccination overview with recommended vaccines, and a searchable report list" loading="lazy" decoding="async" width="1600" height="1352">
+          </figure>
+
+          <p class="cs-eyebrow">Problem 4</p>
+          <h3>Crowded Hospitals and On-Site Payment</h3>
+          <p>Patients often pay medical fees or insurance charges at counters or kiosks, which means long queues, confusion and unnecessary exposure in crowded hospitals.</p>
+          <figure>
+            <img src="assets/work/nhi/11-crowded-counter.jpg" alt="Patients queueing at a crowded hospital payment counter" loading="lazy" decoding="async" width="1350" height="904">
+            <figcaption>Queues at an on-site payment counter.</figcaption>
+          </figure>
+
+          <p class="cs-eyebrow cs-eyebrow--solution">Solution</p>
+          <h3>Online Billing</h3>
+          <p>A secure, mobile-friendly payment system lets people review medical fees, insurance charges and outstanding bills in the app, and pay by credit card, mobile wallet or bank transfer. It reduces on-site congestion, shortens waits and limits exposure in hospitals.</p>
+          <figure class="cs-phone">
+            <img src="assets/work/nhi/12-online-billing.png" alt="Billing screen showing an insurance coverage card, pending payments with a Make Payment button, and payment history" loading="lazy" decoding="async" width="830" height="1690">
+          </figure>
+
+          <p class="cs-eyebrow">Problem 5</p>
+          <h3>Unpredictable Wait Times</h3>
+          <p>People arrive at clinics without knowing whether they will wait ten minutes or several hours. As Taiwan becomes a super-aged society in 2025, more elderly patients may spend three to four hours in waiting rooms, increasing fatigue and the risk of spreading disease among a vulnerable population.</p>
+          <figure class="cs-row">
+            <img src="assets/work/nhi/13-waiting-room-a.jpg" style="--ar: 828 / 554" alt="Crowded hospital waiting room with rows of blue seats filled with mostly elderly patients" loading="lazy" decoding="async" width="828" height="554">
+            <img src="assets/work/nhi/13-waiting-room-b.jpg" style="--ar: 1283 / 966" alt="Large clinic hall packed with elderly patients waiting on folding chairs, many wearing masks" loading="lazy" decoding="async" width="1283" height="966">
+          </figure>
+
+          <p class="cs-eyebrow cs-eyebrow--solution">Solution</p>
+          <h3>AI Wait-Time Prediction</h3>
+          <p>An AI wait-time estimate draws on real-time clinic data, historical traffic, service type and demographic trends. People can choose the best time and place to go, with less uncertainty. The screen shows the number currently being seen without revealing any patient's information.</p>
+          <figure>
+            <img src="assets/work/nhi/14-wait-time.png" alt="Upcoming appointment screen annotated with the current appointment number being seen and an estimated wait time of 1 hour 15 minutes" loading="lazy" decoding="async" width="1600" height="1158">
+          </figure>
+        </section>
+
+        <section class="cs-section" id="design">
+          <h2>Final Design</h2>
+          <p>The high-fidelity prototype brings the solutions together in four main areas.</p>
+          <div class="cs-screens">
+            <figure>
+              <img src="assets/work/nhi/15-hifi-dashboard.png" alt="Dashboard with a virtual insurance card, upcoming appointment and a Book an Appointment button" loading="lazy" decoding="async" width="850" height="1740">
+              <figcaption><strong>Dashboard.</strong> Book an appointment, see what's next and the predicted wait. A virtual insurance card shows the user's name and NHI ID.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/work/nhi/16-hifi-search.png" alt="Search screen in list view with category chips and nearby facilities showing wait times and open status" loading="lazy" decoding="async" width="850" height="1740">
+              <figcaption><strong>Search.</strong> Keyword search, category chips, list and map views, with live wait times and open status.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/work/nhi/17-hifi-reports.png" alt="Reports screen with tabs for Reports, Vaccines and Data Graph, and a list of reports by date, doctor and diagnosis" loading="lazy" decoding="async" width="850" height="1740">
+              <figcaption><strong>Data &amp; Reports.</strong> Reports, vaccination records with AI-recommended vaccines, and graphs of BMI, blood glucose and more.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/work/nhi/18-hifi-billing.png" alt="Insurance and billing screen with coverage details, pending payments and payment history" loading="lazy" decoding="async" width="850" height="1740">
+              <figcaption><strong>Insurance &amp; Billing.</strong> Pending payments apart from history, coverage details, and a clear breakdown of what's covered.</figcaption>
+            </figure>
+          </div>
+          <h3>Outcome &amp; Next Steps</h3>
+          <p>The redesign answers each pain point from the survey: one simplified sign-in instead of competing login methods, a single keyword search instead of searches split across menus, and health data, wait times and billing gathered where people expect them. The result is an app that works less like a government form and more like a health companion.</p>
+          <p>Next, I'd test the prototype with real patients, especially older users like James, comparing how long key tasks take against the current app. Throughout the project, AI sped up my exploration, but every output still needed a designer's judgment: AI should enhance, not replace, the designer's thinking.</p>
+        </section>
+
+        <nav class="cs-next" aria-label="Next">
+          <!-- Only case study for now, so this points to past work on About; switch back to case-study-2.html when it's ready.
+               The label link is skipped by keyboard and screen readers to avoid a duplicate -->
+          <a class="cs-next__label" href="about.html#experience" tabindex="-1" aria-hidden="true">Next</a>
+          <a class="cs-next__title cs-next__title--small" href="about.html#experience">Past Experience</a>
+        </nav>
+      </article>
+    </div>
+
+    <div class="cs-progress" aria-hidden="true">
+      <span class="cs-progress__pct">0%</span>
+      <div class="cs-progress__track"><div class="cs-progress__fill"></div></div>
+    </div>
+  </main>
+
+  <site-footer></site-footer>
+</body>
+</html>

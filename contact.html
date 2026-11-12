@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact, Wei Li</title>
+  <meta name="description" content="Get in touch with Wei Li, UX designer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js"></script>
+</head>
+<body>
+  <site-nav current="contact"></site-nav>
+
+  <main id="main">
+    <header class="page-intro wrap">
+      <h1>Contact</h1>
+      <!-- Styled like the red square in the home page hero (same box as the Work and About page intros) -->
+      <div class="page-intro__lede page-intro__lede--offset work-note">
+        <p>Feel free to contact me for <span class="accent">co-op</span> positions for <span class="accent nowrap">summer-fall 2027</span>.<br>
+          Always happy to talk design over coffee.</p>
+      </div>
+    </header>
+
+    <section class="wrap" aria-label="Contact details">
+      <div class="contact-grid">
+        <!-- Values come from SITE in js/site.js; the text here is the no-JS fallback.
+             Phone and email copy to the clipboard on click; a bubble with a copy icon shows on hover/focus. -->
+        <dl class="contact-details">
+          <div><dt>Location</dt><dd data-site="location">Toronto, Ontario</dd></div>
+          <div>
+            <dt>Phone</dt>
+            <dd class="copy-field">
+              <button class="copy-field__button" type="button" data-copy="phone" aria-describedby="copy-tip-phone">
+                <span data-site="phone">+1 (000) 000-0000</span>
+              </button>
+              <span class="copy-field__tip" id="copy-tip-phone" role="tooltip">
+                <svg class="copy-field__icon copy-field__icon--copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="6.5" width="10" height="10" rx="1.5"/><path d="M13.5 6.5v-2a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2"/></svg>
+                <svg class="copy-field__icon copy-field__icon--done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg>
+                <span class="copy-field__label visually-hidden">Copy phone number</span>
+              </span>
+              <span class="visually-hidden" role="status" data-copy-status></span>
+            </dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd class="copy-field">
+              <button class="copy-field__button" type="button" data-copy="email" aria-describedby="copy-tip-email">
+                <span data-site="email">weilee0406@gmail.com</span>
+              </button>
+              <span class="copy-field__tip" id="copy-tip-email" role="tooltip">
+                <svg class="copy-field__icon copy-field__icon--copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="6.5" width="10" height="10" rx="1.5"/><path d="M13.5 6.5v-2a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2"/></svg>
+                <svg class="copy-field__icon copy-field__icon--done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg>
+                <span class="copy-field__label visually-hidden">Copy email address</span>
+              </span>
+              <span class="visually-hidden" role="status" data-copy-status></span>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="contact-action">
+          <a class="btn contact-action__send" data-mailto href="mailto:weilee0406@gmail.com" aria-describedby="send-note">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5"/><path d="m3 5.5 7 5.5 7-5.5"/></svg>
+            Email Wei
+          </a>
+          <p class="contact-action__note" id="send-note">Opens a new email in your mail app</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+</body>
+</html>

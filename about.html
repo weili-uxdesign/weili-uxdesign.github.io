@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About, Wei Li</title>
+  <meta name="description" content="Experience, resume and a bit more about Wei Li, UX designer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js"></script>
+</head>
+<body>
+  <site-nav current="about"></site-nav>
+
+  <main id="main">
+    <header class="page-intro wrap">
+      <h1>About</h1>
+      <!-- Styled like the red square in the home page hero (same box as the Work page intro) -->
+      <div class="page-intro__lede page-intro__lede--offset work-note">
+        <p>I approach my career with purpose, making intentional moves across hardware, visual strategy, and UX to build a holistic design perspective.</p>
+        <p>Passionate about lifelong learning and teamwork, I love collaborating to solve meaningful problems and growing a little better every day.</p>
+      </div>
+    </header>
+
+    <!-- Section 1: interactive resume -->
+    <section class="section wrap" id="experience" aria-labelledby="exp-title">
+      <div class="split">
+        <div class="split__label">
+          <h2 id="exp-title">Experience</h2>
+          <p>Most recent first. Hover or focus a role to see work from it.</p>
+          <!-- assets/Wei-Li-Resume.pdf is CV_1109.pdf; to update it, replace the file and keep the name -->
+          <a class="btn btn--small split__action" href="assets/Wei-Li-Resume.pdf" download data-site="resume">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M10 3v10M5.5 8.5 10 13l4.5-4.5M4 16.5h12"/></svg>
+            <span><span class="visually-hidden">Download </span>Resume PDF</span>
+          </a>
+        </div>
+        <div class="split__body">
+          <!-- Most recent first. Each role's "See works" slides live in its <template class="job__works">:
+               TODO(Wei): swap each .ph for <img src="..." alt="..."> when you have images. -->
+          <ol class="timeline">
+            <li class="job">
+              <p class="job__date"><time datetime="2024-02">Feb 2024</time> — <time datetime="2026-02">Feb 2026</time><span class="job__duration"><span class="visually-hidden">, </span>2 yrs 1 mo</span></p>
+              <div class="job__card" tabindex="0">
+                <h3 class="job__title">Service Experience Specialist &amp; Pilates Instructor</h3>
+                <p class="job__org">Homefitness Taiwan Gym &amp; Pilates Studio</p>
+                <!-- Description (and See works) open when the card is hovered or focused -->
+                <div class="job__more">
+                  <div class="job__more-inner">
+                    <ul class="job__desc">
+                      <li>Client Retention &amp; Revenue Growth</li>
+                      <li>Assisted management during the rollout of a second facility</li>
+                      <li>Service Blueprint &amp; Operations SOP</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="job">
+              <p class="job__date"><time datetime="2022-12">Dec 2022</time> — <time datetime="2024-01">Jan 2024</time><span class="job__duration"><span class="visually-hidden">, </span>1 yr 2 mos</span></p>
+              <div class="job__card" tabindex="0">
+                <h3 class="job__title">Visual Designer</h3>
+                <p class="job__org">HOWDIGITAL</p>
+                <!-- Description (and See works) open when the card is hovered or focused -->
+                <div class="job__more">
+                  <div class="job__more-inner">
+                    <ul class="job__desc">
+                      <li><strong>Cross-Industry Visual Design:</strong> Delivered high-impact advertising and marketing collateral for diverse enterprise clients—including major banks, medical brands, ASUS Corporate, and restaurant franchises—tailoring visual strategies to distinct target audiences.</li>
+                      <li><strong>End-to-End Branding &amp; Collateral:</strong> Spearheaded end-to-end design initiatives, including a full brand identity overhaul for a healthcare client and bespoke logo design, print materials, and static promotional assets.</li>
+                      <li><strong>Multimedia &amp; Digital Campaigns:</strong> Produced dynamic multi-format digital assets, including animated GIFs and short-form video content to optimize engagement across social media channels and digital ad placements.</li>
+                      <li><strong>Web Content &amp; Project Management:</strong> Managed ongoing maintenance and updates for 1-page corporate event web pages, balancing concurrent design projects and tight agency deadlines across multiple brand accounts.</li>
+                    </ul>
+                    <button class="btn btn--small job__see" type="button" data-works aria-haspopup="dialog">See Works</button>
+                    <template class="job__works">
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/01-doubleline-cover.webp" alt="DoubleLine (好孕家) social media cover with flowing contour-line artwork and the line “Providing the best neutraceutical solution”" loading="lazy" decoding="async"><figcaption>DoubleLine: social media cover for a fertility-supplement brand</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/02-doubleline-logo-redesign.webp" alt="DoubleLine logo before and after: the former gradient mark beside the redesigned navy, teal and burgundy mark" loading="lazy" decoding="async"><figcaption>DoubleLine: logo refresh, former mark vs. redesigned mark</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/03-doubleline-social-pages.webp" alt="DoubleLine Facebook page, Instagram profile and Facebook post mockups using the new visual system" loading="lazy" decoding="async"><figcaption>DoubleLine: Facebook and Instagram rollout of the new look</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/04-doubleline-product-posts.webp" alt="Four DoubleLine product posts for Androfertile, PreConceive Vitamins, Iron tablets and a free-shipping promotion" loading="lazy" decoding="async"><figcaption>DoubleLine: product promotion posts</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/05-doubleline-infographics.webp" alt="Three DoubleLine infographic posts presenting Q10, prenatal vitamin and DHEA study data as simple charts" loading="lazy" decoding="async"><figcaption>DoubleLine: infographic posts that make clinical data easy to read</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/06-doubleline-before-after.png" alt="DoubleLine DHEA infographic before and after the redesign: a busy pink chart replaced by a calm, minimal ring chart" loading="lazy" decoding="async"><figcaption>DoubleLine: DHEA infographic, before and after the redesign</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/07-mercedes-2023-notebooks.webp" alt="Two Chung Hwa Benz Group 2023 notebooks, charcoal with gold foil and royal blue with silver foil radiating-line artwork" loading="lazy" decoding="async"><figcaption>Chung Hwa Benz Group: 2023 corporate notebooks with gold and silver foil</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/08-mercedes-notebook.webp" alt="Tall charcoal Chung Hwa Benz Group notebook with gold radiating lines around an abstract emblem" loading="lazy" decoding="async"><figcaption>Chung Hwa Benz Group: notebook cover</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/09-mercedes-red-envelopes.webp" alt="Chung Hwa Benz Group Year of the Rabbit red envelopes with gold-foil rabbit and line patterns" loading="lazy" decoding="async"><figcaption>Chung Hwa Benz Group: Year of the Rabbit red envelopes</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/10-chuwa-instagram-posts.webp" alt="Three bold red, blue and yellow Instagram posts for Chu-Wa Korean restaurant, illustrated with K-pop dance moves" loading="lazy" decoding="async"><figcaption>Chu-Wa Korean Restaurant: K-pop themed Instagram posts</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/11-chuwa-seasonal-posts.webp" alt="Chu-Wa Korean restaurant Facebook post and seasonal travel graphics illustrated with K-drama couples" loading="lazy" decoding="async"><figcaption>Chu-Wa Korean Restaurant: K-Drama seasonal travel series for Facebook marketing</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/12-asus-healthcare-carousel.webp" alt="ASUS healthcare Instagram carousel: a company profile post and need-by-need slides for a London hospital" loading="lazy" decoding="async"><figcaption>ASUS: healthcare industry Instagram carousel</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/13-asus-if-design-award.webp" alt="ASUS iF Design Award 2022 campaign: a “32 wins” announcement and product posts for ExpertBook and Chromebook models" loading="lazy" decoding="async"><figcaption>ASUS: 2022 iF Design Award campaign</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/howdigital/14-stassen-brand-story.webp" alt="Stassen tea Instagram brand-story carousel in deep green with gold botanical line art and certification panels" loading="lazy" decoding="async"><figcaption>Stassen Tea: Instagram brand story carousel</figcaption></figure>
+                    </template>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="job">
+              <p class="job__date"><time datetime="2021-05">May 2021</time> — <time datetime="2023-06">Jun 2023</time><span class="job__duration"><span class="visually-hidden">, </span>2 yrs 2 mos</span></p>
+              <div class="job__card" tabindex="0">
+                <h3 class="job__title">Freelance Visual &amp; Multimedia Designer</h3>
+                <p class="job__org">Selected Clients: Real Digital Creative Agency · Faith For Animals · Freediving Studio · Restaurant Brands</p>
+                <!-- Description (and See works) open when the card is hovered or focused -->
+                <div class="job__more">
+                  <div class="job__more-inner">
+                    <ul class="job__desc">
+                      <li><strong>End-to-End Visual Solutions &amp; Commercial Photography:</strong> Delivered comprehensive brand identity, social media assets, and commercial photography for agencies, small businesses, and restaurants—specializing in high-end food photography and conversion-focused Amazon listing visuals.</li>
+                      <li><strong>Video Production &amp; Marketing Campaigns:</strong> Directed, filmed, and post-produced short and long-form video content (YouTube, Instagram Reels) across diverse client campaigns, ranging from commercial restaurant marketing initiatives to field documentary interviews.</li>
+                      <li><strong>Visual Storytelling &amp; Community Impact:</strong> Leveraged strategic multimedia storytelling for non-profit Trap-Neuter-Return (TNR) animal welfare campaigns, driving heightened community engagement and increasing donor contributions.</li>
+                      <li><strong>Agile Project &amp; Client Management:</strong> Managed concurrent freelance projects under tight deadlines, conducting rapid feedback and iteration loops with clients to ensure all visual deliverables aligned with business goals and brand guidelines.</li>
+                    </ul>
+                    <button class="btn btn--small job__see" type="button" data-works aria-haspopup="dialog">See Works</button>
+                    <template class="job__works">
+                      <figure class="carousel__slide"><video src="assets/work/freelance/01-cair-amazon-carousel.mp4" muted loop playsinline preload="metadata" aria-label="Screen recording of the CAIR Amazon product image carousel being browsed"></video><figcaption>CAIR: Amazon product image carousel</figcaption></figure>
+                      <figure class="carousel__slide"><video src="assets/work/freelance/02-cycle1st-amazon-detail-page.mp4" muted loop playsinline preload="metadata" aria-label="Screen recording scrolling through the Cycle1st Amazon product detail page"></video><figcaption>Cycle1st: Amazon product detail page</figcaption></figure>
+                      <figure class="carousel__slide"><video src="assets/work/freelance/03-faith-for-animals-video.mp4" muted loop playsinline preload="metadata" aria-label="Faith For Animals Trap-Neuter-Return documentation video"></video><figcaption>Faith For Animals Non-Profit Org: TNR documentation video</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/freelance/04-vitalita-food-photo.webp" alt="Vitalita restaurant marketing photo: grilled chicken and zucchini lifted on a fork above a plated appetizer" loading="lazy" decoding="async"><figcaption>Vitalita: food photography for new appetizer dishes, Taipei</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/freelance/03-busybee-brand.webp" alt="Busy Bee 小嗡農 Raw Longan Honey brand cover with engraved longan fruit and leaf illustrations" loading="lazy" decoding="async"><figcaption>Busy Bee: logo &amp; packaging design</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/freelance/04-busybee-jar.webp" alt="Busy Bee Raw Longan Honey jar mockup with the new label" loading="lazy" decoding="async"><figcaption>Busy Bee: honey jar packaging</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/freelance/05-busybee-labels.webp" alt="Busy Bee front and back label layouts" loading="lazy" decoding="async"><figcaption>Busy Bee: front and back label layouts</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/freelance/06-busybee-jug-tags.webp" alt="Busy Bee gallon jug, neck tag and bottle labels" loading="lazy" decoding="async"><figcaption>Busy Bee: lid sticker, front &amp; back label for gallon jug</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/freelance/07-busybee-seal-hangtag.webp" alt="Busy Bee round seal sticker and hang-tag label" loading="lazy" decoding="async"><figcaption>Busy Bee: lid sticker, wrap-around label for glass bottle</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/freelance/08-busybee-wraparound.webp" alt="Busy Bee full wraparound label laid flat" loading="lazy" decoding="async"><figcaption>Busy Bee: wrap-around label for glass bottle</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/freelance/09-mengazzoli-brochure.webp" alt="Mengazzoli and DALFA balsamic vinegar trifold brochure" loading="lazy" decoding="async"><figcaption>Mengazzoli: balsamic vinegar trifold brochure</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/freelance/10-divingmind-wetsuit.webp" alt="Diving Mind free diving logo on a diver’s wetsuit underwater" loading="lazy" decoding="async"><figcaption>DivingMind: freediving studio logo, printed on wetsuit</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/freelance/11-divingmind-logo.webp" alt="Diving Mind logo over a freediver silhouette" loading="lazy" decoding="async"><figcaption>DivingMind: freediving studio logo design</figcaption></figure>
+                    </template>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="job">
+              <p class="job__date"><time datetime="2019-08">Aug 2019</time> — <time datetime="2021-10">Oct 2021</time><span class="job__duration"><span class="visually-hidden">, </span>2 yrs 3 mos</span></p>
+              <div class="job__card" tabindex="0">
+                <h3 class="job__title">Instructor in Visual Arts &amp; Design</h3>
+                <p class="job__org">The Primacy Collegiate Academy</p>
+                <!-- Description (and See works) open when the card is hovered or focused -->
+                <div class="job__more">
+                  <div class="job__more-inner">
+                    <ul class="job__desc">
+                      <li>Developed and delivered courses spanning graphic design, video production, photography, fine arts, and yearbook publication</li>
+                      <li>Instructed students in design principles, media composition, and industry-standard tools including Adobe Illustrator, Photoshop, Premiere Pro, InDesign, and Lightroom</li>
+                    </ul>
+                    <button class="btn btn--small job__see" type="button" data-works aria-haspopup="dialog">See Photos</button>
+                    <template class="job__works">
+                      <figure class="carousel__slide"><img src="assets/work/instructor/01-yearbook-spread.webp" alt="Open yearbook mockup showing the 2020–2021 Student Association spread, a time-travel themed timeline of cut-out event photos" loading="lazy" decoding="async"><figcaption>Yearbook 2020–2021: Student Association spread</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/instructor/02-fine-arts-photoshop.webp" alt="Students sketching with pencils in a fine arts class beside a student editing a poster in Photoshop" loading="lazy" decoding="async"><figcaption>Fine Arts and Photoshop classes</figcaption></figure>
+                      <figure class="carousel__slide"><img src="assets/work/instructor/03-design-critique.webp" alt="Students reviewing typography posters pinned on the wall and hung along a glass corridor during a design critique" loading="lazy" decoding="async"><figcaption>Design critique: students reviewing each other’s posters</figcaption></figure>
+                    </template>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="job">
+              <p class="job__date"><time datetime="2018-10">Oct 2018</time> — <time datetime="2019-05">May 2019</time><span class="job__duration"><span class="visually-hidden">, </span>8 mos</span></p>
+              <div class="job__card" tabindex="0">
+                <h3 class="job__title">Junior Industrial Designer</h3>
+                <p class="job__org">ASUS</p>
+                <!-- Description (and See works) open when the card is hovered or focused -->
+                <div class="job__more">
+                  <div class="job__more-inner">
+                    <ul class="job__desc">
+                      <li><strong>3D CAD &amp; Specification Management:</strong> Executed specification updates and model refinements for commercial laptop enclosures (ABCD covers) using Pro/ENGINEER (Pro/E) to support high-volume mass production.</li>
+                      <li><strong>Cross-Functional Collaboration:</strong> Partnered closely with mechanical engineering and manufacturing teams to address technical constraints, align on manufacturing processes, and preserve design quality.</li>
+                      <li><strong>CMF Quality Control:</strong> Directed color-matching, proofing, and material finishing quality assurance to maintain strict CMF brand standards across production batches.</li>
+                      <li><strong>Creative Ideation &amp; Research:</strong> Developed CMF inspiration boards and conceptual sketches for the premium Zenbook series, exploring new materials, finishes, and design trends.</li>
+                    </ul>
+                    <button class="btn btn--small job__see" type="button" data-works aria-haspopup="dialog">See Works</button>
+                    <template class="job__works">
+                      <figure class="carousel__slide"><img src="assets/work/asus/01-laptop.webp" alt="Slim grey ASUS laptop opened wide, floating above light-streaked roads in front of a night city skyline" loading="lazy" decoding="async"><figcaption>CAD model refinement &amp; QA for ASUS Pro P5440 13" &amp; 15"</figcaption></figure>
+                    </template>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: skills and education, side by side -->
+    <section class="section wrap" aria-label="Skills and education">
+      <div class="duo">
+        <section class="duo__col" aria-labelledby="skills-title">
+          <h2 class="duo__title" id="skills-title">Skills</h2>
+          <div class="skills">
+            <div class="skills__group">
+              <h3 class="skills__heading">Design Tools</h3>
+              <ul class="skills__list">
+                <li class="skill skill--tool"><svg class="skill__logo" viewBox="0 0 28 28" aria-hidden="true"><rect x=".5" y=".5" width="27" height="27" rx="5.5" fill="#fff" stroke="#DCDAD4"/><path d="M14 5h-3a3 3 0 0 0 0 6h3z" fill="#F24E1E"/><path d="M14 5h3a3 3 0 0 1 0 6h-3z" fill="#FF7262"/><path d="M14 11h-3a3 3 0 0 0 0 6h3z" fill="#A259FF"/><circle cx="17" cy="14" r="3" fill="#1ABCFE"/><path d="M14 17h-3a3 3 0 1 0 3 3z" fill="#0ACF83"/></svg><span>Figma</span></li>
+                <li class="skill skill--tool"><svg class="skill__logo" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="6" fill="#330000"/><text x="14" y="18.5" text-anchor="middle" font-family="Instrument Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#FF9A00">Ai</text></svg><span>Illustrator</span></li>
+                <li class="skill skill--tool"><svg class="skill__logo" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="6" fill="#001E36"/><text x="14" y="18.5" text-anchor="middle" font-family="Instrument Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#31A8FF">Ps</text></svg><span>Photoshop</span></li>
+                <li class="skill skill--tool"><svg class="skill__logo" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="6" fill="#001D34"/><text x="14" y="18.5" text-anchor="middle" font-family="Instrument Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#31A8FF">Lr</text></svg><span>Lightroom</span></li>
+                <li class="skill skill--tool"><svg class="skill__logo" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="6" fill="#00005B"/><text x="14" y="18.5" text-anchor="middle" font-family="Instrument Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#9999FF">Pr</text></svg><span>Premiere Pro</span></li>
+                <li class="skill skill--tool"><svg class="skill__logo" viewBox="0 0 28 28" aria-hidden="true"><rect x=".5" y=".5" width="27" height="27" rx="5.5" fill="#fff" stroke="#DCDAD4"/><g stroke="#D97757" stroke-width="2.2" stroke-linecap="round"><path d="M14 6v16M6 14h16M8.3 8.3l11.4 11.4M19.7 8.3 8.3 19.7"/></g></svg><span>Claude Vibe Coding</span></li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3 class="skills__heading">Expertise</h3>
+              <ul class="skills__list">
+                <li class="skill skill--expertise"><svg class="skill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><rect x="6" y="12" width="5" height="5" rx="1"/><path d="M14 13h4M14 16h3"/></svg><span>User Interface Design</span></li>
+                <li class="skill skill--expertise"><svg class="skill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="9" r="4"/><rect x="12.5" y="12.5" width="8" height="8" rx="1"/><path d="M5 20.5 8 15l3 5.5z"/></svg><span>Visual Design</span></li>
+                <li class="skill skill--expertise"><svg class="skill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5M8 13v-2M10.5 13V8M13 13v-3.5"/></svg><span>User Research &amp; Analysis</span></li>
+                <li class="skill skill--expertise"><svg class="skill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.2h5c0-.9.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span>Exploratory Ideation</span></li>
+                <li class="skill skill--expertise"><svg class="skill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m5.5 6.5 13 11M18.5 6.5l-13 11"/></svg><span>Wireframe</span></li>
+                <li class="skill skill--expertise"><svg class="skill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="8" height="14" rx="1.5"/><rect x="13.5" y="5" width="8" height="14" rx="1.5"/><path d="M8 12h7.5m-1.8-1.8L15.5 12l-1.8 1.8"/></svg><span>Prototyping</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="duo__col" aria-labelledby="edu-title">
+          <h2 class="duo__title" id="edu-title">Education</h2>
+          <ol class="edu">
+            <li class="edu__item">
+              <p class="edu__date"><time datetime="2026">2026</time> — <time datetime="2028">2028</time><span class="edu__status">Currently Attending</span></p>
+              <div>
+                <h3 class="edu__school">University of Toronto</h3>
+                <p class="edu__program">User Experience Design, MI</p>
+              </div>
+            </li>
+            <li class="edu__item">
+              <p class="edu__date"><time datetime="2014">2014</time> — <time datetime="2018">2018</time></p>
+              <div>
+                <h3 class="edu__school">University of Washington</h3>
+                <p class="edu__program">Industrial Design, BA</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </section>
+
+    <!-- Section 3: outside of work. Full-width photo collage (hover or tab to a photo for its description), then the heading and text below it -->
+    <section class="section" aria-labelledby="more-title">
+      <!-- TODO(Wei): replace each .ph with <img src="..." alt="..."> and write a title + sentence for each photo.
+           Each placeholder says the shape of its spot; photos are cropped to fill it. -->
+      <div class="collage">
+        <!-- Vertical 9:16 video, shown uncropped. Web copy of short_freediving.mov (720×1280, 30fps, 2.4 MB, no sound track). -->
+        <figure class="collage__item collage__item--v" tabindex="0">
+          <video src="assets/about/freediving.mp4" poster="assets/about/freediving-poster.jpg"
+                 autoplay muted loop playsinline preload="metadata"
+                 aria-label="Video: a freediver gliding over a rocky seabed, in black and white"></video>
+          <figcaption class="collage__caption">
+            <span class="collage__title">Deep in the Ocean</span>
+            <span class="collage__text">In freediving, reaching a calm, extended breath-hold requires deep focus, sensory regulation, and poise under pressure. Being underwater is my ultimate reset—clearing mental noise so I can return to complex work with sharp clarity and intentionality.</span>
+          </figcaption>
+        </figure>
+        <figure class="collage__item collage__item--a" tabindex="0">
+          <img src="assets/about/orsay-nymphe.jpg" width="1333" height="2000" loading="lazy" decoding="async"
+               alt="A draped marble sculpture seen from behind in the light-filled main hall of the Musée d'Orsay">
+          <figcaption class="collage__caption">
+            <span class="collage__title">Appreciation for Classical Form &amp; Light</span>
+            <span class="collage__text">Studying sculpture at the Musée d'Orsay shaped how I view form, volume, and light. Through photography, I explore how light translates physical matter and surface texture into dynamic visual structure—training my eye to notice subtle details in spatial hierarchy.</span>
+          </figcaption>
+        </figure>
+        <figure class="collage__item collage__item--b" tabindex="0">
+          <img src="assets/about/bouldering.webp" width="1124" height="860" loading="lazy" decoding="async"
+               alt="Seen from above, a climber reaches between holds on an overhanging wooden bouldering wall">
+          <figcaption class="collage__caption">
+            <span class="collage__title">Route Problem-Solving</span>
+            <span class="collage__text">Bouldering is physical route-planning. It requires mapping momentum, flexibility, and spatial awareness to navigate height, overcome friction, and iterate on movements until finding the most efficient line up the wall.</span>
+          </figcaption>
+        </figure>
+        <figure class="collage__item collage__item--d" tabindex="0">
+          <img src="assets/about/adopt-dog.webp" width="682" height="1024" loading="lazy" decoding="async"
+               alt="A black Lab-mix sitting on a white plinth against a dark grey backdrop, looking to the side">
+          <figcaption class="collage__caption">
+            <span class="collage__title">Adopt, Don't Shop</span>
+            <span class="collage__text">Passionate about animal rescue, I advocate for shelter adoption—starting with my brave three-legged Lab mix rescue from Taiwan. Advocating for shelter pets has taught me the power of community storytelling and empathy-driven outreach.</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap collage-intro">
+        <div class="split split--plain">
+          <div class="split__label">
+            <h2 id="more-title">Outside of Work</h2>
+            <p>Things I do when I'm not designing.</p>
+          </div>
+          <div class="split__body">
+            <p class="more-me">When I’m not working, you’ll find me outdoors, exploring, or staying active—I strongly believe a healthy body keeps the mind focused and sharp. I’m passionate about visual content creation, advocacy, and discovering restaurants that prove healthy food can be genuinely delicious. I’m also deeply inspired by animals; observing their distinct behaviors and communication styles always gives me a fresh lens on human interaction and design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- "See works": full-screen horizontal scroller. Slides come from each job's <template class="job__works"> -->
+  <dialog class="carousel" aria-labelledby="carousel-title">
+    <div class="carousel__head">
+      <h2 class="carousel__title" id="carousel-title">Work</h2>
+      <button class="carousel__close" type="button" data-carousel-close aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg>
+      </button>
+    </div>
+    <div class="carousel__scroller" tabindex="0" aria-roledescription="carousel" aria-label="Work samples. Use the left and right arrow keys to browse."></div>
+    <div class="carousel__foot">
+      <p class="carousel__count" aria-live="polite">1 / 1</p>
+      <div class="carousel__progress" aria-hidden="true"><div class="carousel__progress-fill"></div></div>
+      <p class="carousel__hint"><span class="carousel__hint--pointer">Scroll or drag to browse</span><span class="carousel__hint--touch">Swipe to browse</span></p>
+    </div>
+  </dialog>
+
+  <site-footer></site-footer>
+</body>
+</html>

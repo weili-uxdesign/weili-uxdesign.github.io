@@ -1,0 +1,11 @@
+.DS_Store
+.claude/
+
+# Earlier explorations, not used by the site (hero videos are ~22 MB)
+logo/
+hero-video/
+Code/
+Work Images/
+
+# Working drafts, not part of the site
+drafts/

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wei Li, UX Designer</title>
+  <meta name="description" content="Wei Li is a UX designer looking for co-op positions for summer-fall 2027.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js"></script>
+</head>
+<body>
+  <site-nav current="home"></site-nav>
+
+  <main id="main">
+    <!-- Hero: built from Wei's Figma frame (980 × 579). Every word is placed at its Figma
+         position and baseline in frame pixels, so the composition scales as one piece. -->
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-stage">
+        <div class="hero-stage__frame">
+          <p class="hero-facts"><span style="--d:0ms">University of Toronto</span><span style="--d:90ms">University of Washington</span><span style="--d:180ms">5+ years design experience</span></p>
+
+          <!-- One sentence for screen readers; the commas are only for them.
+               Intro: each word slides in from the side it sits on (--from: -1 left, 1 right), top rows first (--d) -->
+          <h1 class="hero-words" id="hero-title">
+            <span class="hw hw--label" style="--x:142; --b:257; --from:-1; --d:120ms">An</span>
+            <span class="hw hw--front" style="--x:166; --b:257; --from:-1; --d:120ms">empathetic</span>
+            <span class="hw hw--label" style="--x:481; --b:182; --from:1; --d:0ms">&amp;</span>
+            <span class="hw" style="--x:497; --b:206; --from:1; --d:0ms">curious</span>
+            <span class="hw hw--front" style="--x:585; --b:326; --from:1; --d:240ms">UX designer<span class="visually-hidden">,</span></span>
+            <span class="hw hw--behind" style="--x:0; --b:361; --from:-1; --d:300ms">video editor</span>
+            <span class="hw hw--label" style="--x:12; --b:380; --from:-1; --d:300ms">for fun<span class="visually-hidden">,</span></span>
+            <span class="hw hw--behind hw--right" style="--r:0; --b:499; --from:1; --d:420ms">photographer</span>
+            <span class="hw hw--label hw--right" style="--r:12; --b:514; --from:1; --d:420ms">as hobby<span class="visually-hidden">,</span></span>
+            <span class="hw" style="--x:169; --b:557; --from:-1; --d:480ms">visual designer</span>
+            <span class="hw hw--label" style="--x:181; --b:576; --from:-1; --d:480ms">industry-experienced</span>
+          </h1>
+
+          <div class="hero-square">
+            <!-- Hover / focus swaps the English name for the Mandarin one; links to Contact -->
+            <a class="hero-square__name" href="contact.html" aria-label="Contact Wei Li (李惟)">
+              <span class="hero-square__name-en" aria-hidden="true">Wei Li</span>
+              <span class="hero-square__name-zh" lang="zh-Hans" aria-hidden="true">李惟</span>
+            </a>
+            <p class="hero-square__lead">Passionate about<br>crafting intentional<br>design that empowers</p>
+            <p class="hero-square__rest">better cognitive experiences, elevates everyday routines <br>and strengthens communities through technology</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <h2 id="work-title">Featured Case Study</h2>
+        <a class="link" href="about.html#experience">See experience</a>
+      </div>
+      <!-- One .feature-row per project. Rows alternate automatically: odd rows put a portrait image
+           on the left, even rows put a landscape image on the right. -->
+      <!-- TODO(Wei): swap the .ph blocks for <img> covers, and update titles, years, focus and descriptions -->
+      <div class="features">
+        <div class="feature-row">
+          <a class="feature" href="case-study-1.html">
+            <h3 class="feature__title">National Health Insurance</h3>
+            <div class="feature__media">
+              <img src="assets/work/nhi/00-cover.jpg" alt="Redesigned National Health Insurance app screens on phones against a blue background" loading="lazy" decoding="async" width="1088" height="1360">
+            </div>
+            <span class="feature__year">2025</span>
+            <span class="feature__foot">
+              <span>UX Research / Product Design</span>
+              <span class="feature__view">View <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 14 14 6M7 6h7v7"/></svg></span>
+            </span>
+          </a>
+          <div class="feature-desc">
+            <p>Redesigning Taiwan's government health insurance app into a clear, AI-supported health companion: one simple sign-in, service search, health data in one place and online billing.</p>
+            <dl>
+              <dt>Project Type</dt><dd>Self-Initiated</dd>
+              <dt>Timeline</dt><dd>8-week design sprint</dd>
+            </dl>
+          </div>
+        </div>
+
+        <!-- Hidden until these case studies are written: remove this comment wrapper to show them again.
+        <div class="feature-row">
+          <a class="feature" href="case-study-2.html">
+            <h3 class="feature__title">Case Study Two</h3>
+            <div class="feature__media">
+              <div class="ph ph--dark" style="--ratio: 16 / 9" role="img" aria-label="Cover image placeholder for case study two">
+                <p class="ph__text"><strong>Cover image</strong>Case Study Two, landscape 16:9</p>
+              </div>
+            </div>
+            <span class="feature__year">2025</span>
+            <span class="feature__foot">
+              <span>Interaction Design / Prototyping</span>
+              <span class="feature__view">View <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 14 14 6M7 6h7v7"/></svg></span>
+            </span>
+          </a>
+          <div class="feature-desc">
+            <p>A short description of the project: the problem, your approach, and the result. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <dl>
+              <dt>Role</dt><dd>UX Designer</dd>
+              <dt>Timeline</dt><dd>8 weeks</dd>
+            </dl>
+          </div>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="exp-title">
+      <div class="experience-teaser">
+        <h2 class="label" id="exp-title">Past Experience</h2>
+        <p class="experience-teaser__text">5+ years in the design industry spanning industrial design and digital content production.<br>Check out Wei's experience and past works!</p>
+        <a class="btn experience-teaser__cta" href="about.html#experience">
+          See Experience
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+</body>
+</html>
